@@ -1,0 +1,20 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: nut-exporter
+  description: Prometheus Exporter for NUT
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: radiorabe/container-image-nut-exporter
+  links:
+    - url: https://wiki.rabe.ch/Network_UPS_Tools
+      title: RaBe Wiki Documentation
+    - url: https://github.com/HON95/prometheus-nut-exporter
+      title: Upstreeam Project
+spec:
+  type: container
+  lifecycle: experimental
+  owner: it-reaktion
+  dependsOn:
+    - component:default/rabe-ubi9-minimal
