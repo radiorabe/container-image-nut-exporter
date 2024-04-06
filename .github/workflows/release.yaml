@@ -18,6 +18,7 @@ jobs:
       display-name: RaBe NUT Exporter
       tags: minimal rhel9 ubi9 nut nut-exporter
       cosign-verify: true
+      cosign-base-image-only: true
   mkdocs:
     runs-on: ubuntu-latest
     permissions:
