@@ -1,5 +1,5 @@
 FROM docker.io/hon95/prometheus-nut-exporter:1.2.1@sha256:a9bfbbae3b12a6486e6e4b933a69a79d01342db27346d6b4cd5512f4eef6b111 AS upstream
-FROM ghcr.io/radiorabe/ubi9-minimal:0.11.4@sha256:9d9f4695ed31b1856b258a1081abd15a99e1e62a7935b421a3c2e46bbdf62652
+FROM ghcr.io/radiorabe/ubi9-minimal:0.12.0@sha256:ddf3ac33c48b5005cc325732cb547279a926f29b3db9adcbd844f1cf94dcf831
 
 COPY --from=upstream /app/prometheus-nut-exporter /usr/local/bin/prometheus-nut-exporter
 
